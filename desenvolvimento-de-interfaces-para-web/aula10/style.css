@@ -1,52 +1,123 @@
 body{
-    font-family: verdana, sans-serif;
-    background-color: rgb(68, 68, 68);
+    font-family: Verdana, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
 }
+
+.topo{
+    background-color: #22322c;
+    box-shadow: 0 2px 3px #444;
+    padding: 20px 40px;
+}
+
+.logo{
+    text-align: center;
+    font-size: 28px;
+    color: #eed69b;
+    text-shadow: 1px 1px 2px rgb(166, 224, 164);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu ul{
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    border: 1px solid #e9c569;
+    transition: .7s;
+    border-radius: 5px;
+    background-color: #fff2d0;
+    color: #22322c;
+}
+
+.banner{
+    height: 250px;
+    background: url(imagens/insonia.png)  no-repeat center center, linear-gradient(to bottom, #51df8c 0%, #198a48 100%);
+}
+
+.banner:hover{
+    background: url(imagens/morto.png) no-repeat center center, linear-gradient(to bottom, #eb743d 0%, rgb(238, 11, 11) 100%);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container{
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    width: 80%;
-    height: 800px;
-    margin: 20px auto;
+    border: 2px solid rgb(84, 173, 245);
+    padding: 10px;
     overflow: hidden;
-    position: relative;
 }
 
-.carta{
-    border: 1px solid rgb(153, 153, 153);
-    border-radius: 15px;
-    width: 200px;
-    margin: 10px;
-    text-align: center;
+.col{
+    width: 250px;
+    height: 100px;
+    border: 2px solid rgb(221, 199, 77);
     float: left;
-    padding: 100px 15px;
-    box-shadow: 2px 1px 4px rgb(59, 42, 167);
-    background-color: #fff;
+    margin: 10px 20px;
 }
 
+/* .col:first-child{
+    background-color: rgb(181, 240, 199);
+}
+
+.col:nth-child(2){
+    background-color: rgb(159, 236, 236);
+}
+
+.col:nth-child(3){
+    background-color: rgb(191, 128, 241);
+} */
+
+
+/* fica no lugar das class .bloco1, 2, 3 */
+
+
+
+/* visible - hidden - scroll - auto */
 .bloco1{
-    /* static -  */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
+    overflow: hidden;
 }
 
 .bloco2{
-    position: absolute;
-    top: 40px;
-    left: 80px;
+    overflow-y: scroll;
+    height: 250px !important;
 }
 
 .bloco3{
-    position: absolute;
-    top: 80px;
-    left: 160px;
-}
-
-.bloco4{
-    position: absolute;
-    top: 120px;
-    left: 240px;
+    overflow: auto;
+    height: 150px;
 }

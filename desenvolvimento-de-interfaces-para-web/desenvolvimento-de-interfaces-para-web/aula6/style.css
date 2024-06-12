@@ -15,7 +15,7 @@ p{
     /* word-spacing: 20px; */
     word-spacing: -5px;
     letter-spacing: 5px;
-    text-align: center;
+    text-align:center;
     /* color: rgb(138, 44, 226); */
     color: #610daf;
 }
@@ -23,7 +23,7 @@ p{
 .tarefas{
     list-style-position: outside;  /* inside - outside */
     list-style-type: square;  /* disc - circle - squere */
-    list-style-image: url(check.png); /* icon archeve*/
+    list-style-image: url(check.png); /* icon archeve */
 }
 
 .corrida{
