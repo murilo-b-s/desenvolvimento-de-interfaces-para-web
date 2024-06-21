@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(140deg, #9C30F3 0%, #491970 50%, #340858 51%, #611F96 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    width: 480px;
+    margin-right: 25px;
+}
+
+.conteudo h2{
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+.conteudo span{
+    color: #F3A84E;
+}
+
+.agosto{
+    width: 450px;
+    height: 85px;
+    margin: 20px auto;
+    border-radius: 15px 8px;
+    transform: skew(-30deg);
+    background-color: #F3A84E;
+    box-shadow: -6px -6px 1px #AA5EE8, 6px 6px 1px #330D51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agosto h1{
+    transform: skew(30deg);
+    font-size: 60px;
+    color: #fff;
+}
+
+.agenda{
+    background-color: #fff;
+    height: 78px;
+    margin: 20px auto 10px;
+    padding: 0 30px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenda img{
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 12px;
+}
+
+hr{
+    height: 40px;
+    border: 1px solid;
+    margin: 0 20px;
+}
+.agenda .data{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.imagem{
+    width: 500px;
+}
+.imagem img{
+    width: 100%;
+    max-width: 470px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 50px;
+    box-shadow: -4px -6px 1px #AA5EE8, 4px 6px 1px #330D51;
+}
