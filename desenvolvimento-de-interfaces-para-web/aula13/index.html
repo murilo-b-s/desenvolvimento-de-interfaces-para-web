@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulários HTML</title>
+	<style type="text/css">
+		input{
+			display: block;
+			margin-bottom: 10px;
+		}
+		.checagem input{
+			display: inline-block;
+		}
+		.checagem label{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<h1>Aprendendo sobre Formulários com HTML</h1>
+
+<form method="post" action="">
+	<label for="nome">Seu nome:</label>
+	<input id="nome" type="text" name="nome" placeholder="Seu nome" maxlength="10" minlength="3" required >
+
+	<label for="email">Seu e-mail:</label>
+	<input id="email" type="email" name="email" placeholder="Seu e-mail" required >
+
+	<input type="number" name="idade" placeholder="Sua idade" max="100" min="0" step="20" >
+
+	<input type="tel" name="telefone" placeholder="Telefone / WhatsApp">
+
+	<div class="checagem">
+		<h3>Quais linguagens você domina?</h3>
+		<label>
+			<input type="checkbox" name="html"> HTML
+		</label>
+		<label>
+			<input type="checkbox" name="css" checked> CSS
+		</label>
+		<label>
+			<input type="checkbox" name="js"> JavaScript
+		</label>		
+	</div>
+	<div class="checagem">
+		<h3>Selecione uma opção:</h3>
+		<label>
+			<input type="radio" name="genero" value="m">
+			Masculino
+		</label>
+		<label>
+			<input type="radio" name="genero" value="f" checked>
+			Feminino
+		</label>
+
+	</div>
+
+
+	<!-- periodos -->
+	<input type="date" name="data">
+	<input type="time" name="hora">
+	<input type="datetime-local" name="data-hora">
+	<input type="month" name="mes">
+	<input type="week" name="semana">
+
+	<input type="url" name="site" placeholder="Seu site">
+
+	<input type="search" name="busca" placeholder="Pesquisar...">
+
+	<input type="file" name="arquivo" multiple>
+
+	<input type="password" name="senha" placeholder="Sua Senha">
+	<input type="color" name="cor">
+	<input type="range" name="escala" step="2" max="10" min="0">
+
+	<!-- Botões -->
+	<input type="image" src="botao.png" name="cadastrar">
+	<input type="reset" name="limpar" value="Apagar Campos">
+	<input type="submit" name="enviar" value="Cadastrar Usuário">
+
+	<button>Enviar</button>
+	
+</form>
+
+</body>
+</html>
